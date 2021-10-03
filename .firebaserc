@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "adogtame-e51c7": {
+      "hosting": {
+        "fundacionApp": [
+          "adogtame-e51c7"
+        ]
+      }
+    }
+  }
+}

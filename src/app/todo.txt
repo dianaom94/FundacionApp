@@ -1,0 +1,14 @@
+To do:
+    guard
+
+    diseño:
+	    poner logo (huella) en login
+            poner logo (huella) en header 
+            modificar botón cerrar sesión en el header
+            acomodar el saludo del home (colocar fondo con borderline a la foto)
+            ajustar diseño de botones de vertodos-component y porraza-component
+            ajustar diseño del card de resultados
+            modificar diseño del botón ver más
+            adicionar información de los perros
+
+            Adicionar información en novedades

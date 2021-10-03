@@ -1,0 +1,7 @@
+<ul class="container mt-4" style="color: black; list-style: none;">
+    <li><strong> Raza:</strong> {{raza}}</li>
+    <li> <strong>Edad:</strong> {{edad}} años</li>
+    <li *ngIf="rango==1"> <strong>Urgencia de adopción:</strong> <span class="success"> {{estado[0]}} </span> </li>
+    <li *ngIf="rango==2"> <strong>Urgencia de adopción:</strong> <span class="success">  {{estado[1]}}</span> </li>
+    <li *ngIf="rango==3"> <strong>Urgencia de adopción:</strong> <span class="success">  {{estado[2]}}</span> </li>
+</ul>

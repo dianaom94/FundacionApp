@@ -1,0 +1,33 @@
+<app-header></app-header>
+<div class="img-box " > 
+  <img class="img-menu" src="./../../../../assets/banner2.png" alt="">
+</div>
+
+<div class=" mt-5 container" >
+  <div class="row mt-5 container d-flex justify-content-center align-items-center" >
+    <div class=" col-md-7 col-xs-7  mt-5 d-flex justify-content-center align-items-center">
+      <img style=" width: 80%;"  src="./../../../../assets/Novedades Gala1.png" alt="">
+  </div>
+      <div class="col-md-5 col-xs-5 mt-5 justify-content-center align-items-center" >  
+
+        <h5 class=" d-flex mt-4"> Envíanos tus datos si quieres que te avisemos cuando tengamos los gatitos en nuestras instalaciones.
+          </h5>
+        <form [formGroup]="sendForm">
+          <div class="form-group mt-4">
+            
+            <label for="nombre">Nombre:</label>
+            <input type="text" class="form-control mt-4 mb-2" id="nombre" formControlName="nombre"(input)="evento($event)">
+           
+            <label class="mt-2"for="mensaje">Email:</label>
+            <input type="email" class="form-control mt-4" id="mensaje" formControlName="email" (input)="evento($event)">
+            <div *ngIf="sendForm.get('email')?.hasError('email') && sendForm.get('email')?.touched"
+            class="form-text text-danger" style="font-weight: bold;"> Es necesario introducir el email</div>
+          </div>
+          <button [disabled]="sendForm.invalid" class="btn btn-primary mt-5" (click)="enviar()">Enviar</button>
+          </form>
+      </div>
+  
+</div>
+  
+
+

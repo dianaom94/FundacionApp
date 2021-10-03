@@ -1,0 +1,42 @@
+<app-header></app-header>
+<div class="img-box " > 
+    <img class="img-menu" src="./../../../../assets/banner.png" alt="">
+  </div>
+<div class=" mt-5 container" >
+    <div class="row mt-5 container d-flex justify-content-center align-items-center" >
+    
+        <div class="col-md-5 col-xs-5 mt-5 justify-content-center align-items-center" >  
+            <h1 class=" d-flex">¿Por qué adoptar?</h1>
+            <p class="  d-flex mt-4">Adoptar significa que le darás un hogar a alguien que lo necesita. Adoptar a los perros que han pasado por circunstancias más difíciles o que peresentan conductas especiales, es la mejor demostración de amor, pues indica que lo haces por ellos y no por ti.
+                El "yo quiero", no debería ser la razón o motivo principal para adoptar. La razón siempre debe ser "porque él/ella lo necesita" 
+            </p>
+        </div>
+        <div class=" col-md-7 col-xs-7  mt-5 d-flex justify-content-center align-items-center">
+            <img style=" width: 62%;"  src="./../../../../assets/saludo1.png" alt="">
+        </div>
+    </div>
+</div>
+
+
+<div class="container mt-5 "  >
+    
+    <div class="row d-flex  align-items-center justify-content-evenly">
+        <button (click)="cambiarSeleccion('todos')" id="todos"  class="btn col-md-6 active btn-1 btn-outline-primary list-group-item  d-flex justify-content-center align-items-center" style="width: 20%;"><i class="fas fa-paw "> </i> &nbsp; Ver todos &nbsp; <i class="fas fa-paw "></i></button>
+        
+        <button (click)="cambiarSeleccion('raza')" id="raza" class="btn col-md-6 btn-outline-primary list-group-item d-flex justify-content-center align-items-center " style="width: 20%;"><i class="fas fa-paw "> </i> &nbsp; Buscar raza &nbsp; <i class="fas fa-paw "></i></button>
+        
+        
+    </div>
+    
+    
+</div>
+<div *ngIf="seleccion=='raza'" class="col mt-5 mb-5 ">
+    <app-fundacion-buscar></app-fundacion-buscar>
+</div>
+<div >
+<div *ngIf="seleccion=='todos'"class="row mt-5 container mx-auto " style="background-color: #ffffff17" >
+    <div class="col-lg-4 pt-4 " *ngFor="let perro of perros">
+    <app-fundacion-resultados  nombresPerros= "{{perro.nombre}}" razaPerros= "{{perro.name}}"  imagenPerros="{{perro.image.url}}"></app-fundacion-resultados>
+    </div>
+</div>
+</div>

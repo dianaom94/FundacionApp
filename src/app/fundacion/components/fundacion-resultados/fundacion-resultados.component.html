@@ -1,0 +1,18 @@
+    <div class="card justify-content-center align-items-center card-style"  >
+            <img style="height: 270px;" [src]="imagenPerros" class="card-img-top" alt="...">
+            <div class="card-body align-items-center justify-content-center">
+                <h3 style="color: black;" class="">  {{nombresPerros}}</h3>
+                <h4 style="color: black;"></h4>
+                <div class="row d-flex justify-content-center">
+                    <button (click)="ver =  !ver" class="btn btn-outline-dark col-12" style="width: 100px;">
+                        {{ver ? 'Ver más' : 'Ocultar'}}
+
+                </button>
+
+                <app-fundacion-ver-mas raza="{{razaPerros}}"*ngIf="!ver" class="col-12"></app-fundacion-ver-mas>
+            </div>
+            </div>
+          </div>
+   
+
+

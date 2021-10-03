@@ -1,0 +1,26 @@
+    <header>
+    <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #3E145B ; " id="navbar_menu_barra">
+    <div class="container-fluid">
+      <a [routerLink]="['/home']" class="navbar-brand " style="color: white;" >Fundación AdoGtame</a>
+      <button class="navbar-toggler boton" style="background:none !important;border: none!important;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        
+        <i class=" navbar-toggler-icon" style="color: white;"></i>
+        
+      </button>
+      <div class="fondo collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="d-flex justify-content-center navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item ">
+            <a  [routerLink]="['/home']"  class="nav-link active" style="color: white;"  >Home</a>
+          </li>
+          <li class="nav-item">
+            <a [routerLink]="['/home/novedades']" class="nav-link active" style="color: white;" >Novedades</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <button (click)="cerrarSesion()"class="btn btn-outline-light" style="padding:8px; width: 150px;" type="submit">Cerrar Sesión</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  
+</header>

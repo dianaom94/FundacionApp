@@ -4,6 +4,7 @@ Este proyecto es la presentación final del curso de Angular realizado en Escala
 Es una fundación para adopción de perros, en donde se podrá buscar por raza y desplegar una información detallada de cada uno. Además cuenta con un login, para acceder al contenido de la app. 
 
 ## Datos de acceso
+URL: https://elegant-pike-5831fd.netlify.app/
 
 user: adogtame01@gmail.com
 pass:123456

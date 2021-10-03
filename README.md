@@ -35,7 +35,7 @@ Por medio del @Input se obtienen las imágenes, nombre y razas del componente pa
 
 ## Hooks
 
-Se utilizó el hook "onInit" y "onDestroy" en componente del home para la subscripción del servicio "perrosService".
+Se utilizó el hook "onInit" y "onDestroy" en componente del home para la suscripción del servicio "perrosService".
 
 ## Nombres aleatorios 
 
